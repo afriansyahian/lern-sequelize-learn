@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "this api will create with express, node, sequelize orm",
     "main": "index.js",
-    "angines": {
+    "engines": {
         "node": "12.x"
     },
     "scripts": {

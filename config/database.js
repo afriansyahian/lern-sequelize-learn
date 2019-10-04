@@ -6,13 +6,6 @@ module.exports = {
         password: process.env.DB_PASSWORD,
         database: process.env.DB_NAME,
         host: "127.0.0.1",
-        dialect: "mysql"
-    },
-    test: {
-        username: "root",
-        password: null,
-        database: "database_test",
-        host: "127.0.0.1",
         dialect: "mysql",
         dialectOptions: {
             dateString: true,
@@ -28,6 +21,12 @@ module.exports = {
         host: process.env.DB_HOST_PRODUCTION,
         port:3306,
         dialect: "mysql",
-        operatorsAliases: false
+        operatorsAliases: false,
+        dialectOptions: {
+            dateString: true,
+            typeCast: true,
+            timezone: "+07.00"
+        },
+        timezone: "+07:00"
     }
 };
