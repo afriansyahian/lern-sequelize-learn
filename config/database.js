@@ -20,13 +20,5 @@ module.exports = {
         database: process.env.DB_NAME_PRODUCTION,
         host: process.env.DB_HOST_PRODUCTION,
         port:3306,
-        dialect: "mysql",
-        operatorsAliases: false,
-        dialectOptions: {
-            dateString: true,
-            typeCast: true,
-            timezone: "+07.00"
-        },
-        timezone: "+07:00"
-    }
+        dialect: "mysql"    }
 };

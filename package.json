@@ -4,7 +4,7 @@
     "description": "this api will create with express, node, sequelize orm",
     "main": "index.js",
     "engines": {
-        "node": "12.x"
+        "node": "12.11.1"
     },
     "scripts": {
         "test": "npm start",
